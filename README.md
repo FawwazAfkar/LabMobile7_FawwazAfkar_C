@@ -21,4 +21,17 @@
 ### 5. **Membuat Fungsi Logout**
 
    - Tambahkan tombol logout di `home.page.html`, dan buat fungsi `logout`
-     ```
+
+## Tampilan
+
+[![Demo Video](src/assets/videos/2024-11-01%2015-41-04.mkv)](src/assets/videos/2024-11-01%2015-41-04.mkv)
+
+
+
+
+
+
+
+
+
+
