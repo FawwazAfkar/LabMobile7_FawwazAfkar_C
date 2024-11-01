@@ -24,7 +24,13 @@
 
 ## Tampilan
 
-[![Demo Video](src/assets/videos/2024-11-01%2015-41-04.mkv)](src/assets/videos/2024-11-01%2015-41-04.mkv)
+## Screenshot
+![login](src/assets/img/loginpage.png)
+![home](src/assets/img/homepage.png)
+
+### Video Demo
+![demo](src/assets/videos/2024-11-01%2015-41-04.mkv)
+
 
 
 
