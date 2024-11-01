@@ -1,0 +1,38 @@
+/* Styling untuk input dan label */
+ion-item {
+    --background: transparent;
+    --border-color: #ccc;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding-top: 8px;
+  }
+  
+  ion-label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  
+  ion-input {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  /* Warna border saat input difokuskan */
+  ion-item.ion-focused {
+    --border-color: var(--ion-color-primary);
+  }
+  
+  /* Tampilan logo dan link */
+  .logo {
+    width: 100px;
+    margin: 20px auto;
+  }
+  
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

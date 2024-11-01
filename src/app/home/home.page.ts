@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
+  nama = '';
+  constructor(private authService: AuthenticationService, private router: Router) { this.nama = this.authService.nama }
 
-  constructor() {}
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+  ngOnInit() {}
 
+  logout() {
+    this.authService.logout();
+    this.router.navigateByUrl('/login');
+  }
 }

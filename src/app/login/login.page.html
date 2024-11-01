@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/icon/favicon.png" class="logo"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <!-- Username Input dengan Label Terpisah -->
+    <ion-row>
+      <ion-col>
+        <ion-item lines="inset">
+          <ion-label position="stacked">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Password Input dengan Label Terpisah -->
+    <ion-row>
+      <ion-col>
+        <ion-item lines="inset">
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Tombol Login -->
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" expand="block" shape="round" (click)="login()">Login</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

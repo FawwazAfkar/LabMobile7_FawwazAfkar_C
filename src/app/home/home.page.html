@@ -1,20 +1,60 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Home App</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Header untuk Home Page -->
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home App</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- Tombol Logout -->
+  <ion-item button detail="false" lines="none" (click)="logout()" class="logout-button">
+    <ion-icon slot="start" name="exit-outline"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-item>
+
+  <!-- Pesan Selamat Datang -->
+  <ion-text color="primary" class="welcome-text">
+    <h2>Welcome, {{ nama }}!</h2>
+  </ion-text>
+
+  <!-- Card Informasi -->
+  <ion-card>
+    <img alt="mc" src="assets/img/yamal.png" />
+    <ion-card-header>
+      <ion-card-title>Lamine Yamal</ion-card-title>
+      <ion-card-subtitle>FC Barcelona</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lamine Yamal adalah pemain sepak bola yang bermain untuk FC Barcelona. Dia adalah pemain yang sangat
+      berbakat dan memiliki skill yang sangat baik.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img alt="mc" src="assets/img/gavi.jpg" />
+    <ion-card-header>
+      <ion-card-title>Pablo Gavi</ion-card-title>
+      <ion-card-subtitle>FC Barcelona</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Pablo Gavi adalah pemain sepak bola yang bermain untuk FC Barcelona. Dia adalah pemain yang sangat
+      berbakat dan memiliki skill yang sangat baik.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img alt="mc" src="assets/img/gree.jpg" />
+    <ion-card-header>
+      <ion-card-title>Greesela Adhalia</ion-card-title>
+      <ion-card-subtitle>JKT48</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Greesela Adhalia adalah seorang idol yang berasal dari JKT48. Dia adalah salah satu member yang sangat
+      populer di JKT48.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
